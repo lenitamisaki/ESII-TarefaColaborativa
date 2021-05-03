@@ -10,7 +10,14 @@ NEGÓCIO: Sistema da parte elétrica.
 	Mais para frente do processo os donos da empresa intencionam fazer parcerias com lojas de construção locais para aquisição de materiais para as obras.
 	
 - Quais são os vocabulários de negócio?
+	-Eletrocalha: são calhas para passar cabos ou fios de eletricidade, dados (internet), voz e imagem, e servem para fazer toda a distribuição elétrica.
+	-Eletroduto: tubo rígido ou cano para alojar e proteger fios ou cabos elétricos em instalações ou linhas de energia, telefone etc.
+	-Bitola de cabos: é a seção transversal do cabo, ou seja, sua área. 
 
-	 
 - Quem são os stakeholders?
+  	-Dono da empresa de construção;
+ 	-Construtores;
+  	-Clientes;
+  	-Lojas de construções locais;
+ 	-Analista desenvolvedor.
   	
