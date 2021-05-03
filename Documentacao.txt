@@ -30,4 +30,17 @@ NEGÓCIO: Sistema da parte elétrica.
 
 - Quais são os processos de negócio?
 	   Atualmente o construtor e seu ajudante realizam a inspeção visual da planta da construção, e iniciam a construção com base na experiência pessoal. Cada material é adquirido conforme demanda pontual, também solicitada de acordo com prognóstico do construtor.  
+	   
+- Quais são as regras de negócios?
+	RN0001 - A infraestrutura das eletrocalhas e eletrodutos deve ser planejada de acordo com a Norma Brasileira de Instalações elétricas de baixa tensão (NBR5410). 
+	
+REQUISITOS:
+=============================================================================
+-R0001 - O sistema deve implementar os cálculos, que recebam os seguintes parâmetros: diâmetro_em_mm (double), base_em_mm (double), altura_em_mm (double). Esta função deve retornar o valor da área e do perímetro com duas casas decimais (double).
+-R0002 - O sistema deve calcular com base na porcentagem de ocupação permitida da eletrocalha ou eletroduto, a quantidade desses componentes necessários para realização da obra total.
+-R0003 - O sistema deve permitir a impressão de um relatório, e posterior integração de sistemas.
+-R0004 - O sistema deverá ser implementado em uma versão orientada a objeto.
+-R0005 - O sistema deve ser fácil de usar.
+-R0006 - O sistema deve utilizar as cores padrões da empresa e possuir seu logotipo.
+-R0007 - O sistema deve permitir somente o acesso interno.
 
