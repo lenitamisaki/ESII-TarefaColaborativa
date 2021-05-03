@@ -1,17 +1,16 @@
-NEGÓCIO: Sistema da parte elétrica.
-===================================================================================
-
+NEGÓCIO: Sistema de cálculos para infraestrutura elétrica.
+=============================================================================
 - Qual é o negócio?
-	O negócio terá como objetivo criar um sistema para facilitar a execução de cálculos de uma pequena empresa de construção civil em expansão, que começou a atuar também na áreas elétrica e hidraulica. A princípio apenas os cálculos da parte elétrica foram solicitados, como não existem sistemas disponíveis atualmente, e oa cálculos pelas grande empresas é realizado apenas no excelpara essa pequena parte da empresa, com custo-benefício equivalente ao que a empresa dispõem-se a pagar, solicitaram a elaboração de um projeto compatível com seus requisitos. 
+	O negócio terá como objetivo criar um sistema para facilitar a execução de cálculos de uma pequena empresa de construção civil em expansão, que começou a atuar também na nas áreas: elétrica e hidráulica. A princípio apenas os cálculos da parte elétrica foram solicitados, já que os sistemas atualmente disponíveis não possuem essas funcionalidades, nem podem ser personalizados para essa pequena parte da empresa, com custo-benefício equivalente ao que a empresa se dispõe a pagar, solicitaram a elaboração de um projeto compatível com seus requisitos. 
 
 - Quais são problemas/oportunidades?
-	A princípio como o próprio construtor realizava a inspeção visual e sugeria a compra de materiais perceberam que havia muita compra de materiais desnecessários ou a recompra de materias por erro de cálculo do construtor. Como a empresa lucra também com a compra desses materiais e percebeu-se que grande porcentagem desse lucro tem se perdido. 
-	Esta empresa precisa realizar, além de outras atribuições, alguns cálculos para dimensionamento de bitolas de cabos para instalação elétrica em eletrocalhas ou em eletrodutos. Como a empresa é essencialmente de construção civil, e os construtores atualmente não realizam nenhum cálculo, solicitou-se que o sistema realize esses cálculos para aquisição de material.
-	Mais para frente do processo os donos da empresa intencionam fazer parcerias com lojas de construção locais para aquisição de materiais para as obras.
-	
+	A princípio como o próprio construtor realizava a inspeção visual e sugeria a compra de materiais perceberam que havia muita compra sobressalente ou havia a recompra por erro de cálculo do construtor. Como a empresa lucra também com a aquisição desses materiais percebeu-se que grande porcentagem do lucro tem se perdido. 
+	Esta empresa precisa realizar, além de outras atribuições, alguns cálculos para dimensionamento da infraestrutura para instalação elétrica. Atualmente não há cálculos envolvidos, mas como as obras podem ser auditadas, esses cálculos se fazem necessários, já que as normas pertinentes precisam ser respeitadas.
+	No decorrer do processo os donos da empresa intencionam também realizar parcerias com lojas de construção locais para aquisição de materiais para as obras.
+
 - Quais são os vocabulários de negócio?
 	-Eletrocalha: são calhas para passar cabos ou fios de eletricidade, dados (internet), voz e imagem, e servem para fazer toda a distribuição elétrica.
-	-Eletroduto: tubo rígido ou cano para alojar e proteger fios ou cabos elétricos em instalações ou linhas de energia, telefone etc.
+	-Eletroduto: tubo flexível para alojar e proteger fios ou cabos elétricos em instalações de   energia, telefone etc.
 	-Bitola de cabos: é a seção transversal do cabo, ou seja, sua área. 
 
 - Quem são os stakeholders?
@@ -20,17 +19,18 @@ NEGÓCIO: Sistema da parte elétrica.
   	-Clientes;
   	-Lojas de construções locais;
  	-Analista desenvolvedor.
-  	
+
 - Atividades de Negócio 
 	A001 - Análise da planta da construção disponibilizada que será realizada;
 	A002 - Planejamento da infraestrutura que será realizada;
-	A003 -  “relacionar todos os elementos” que serão utilizados;
-	A004 - Orçar e adquirir os materiais que serão utilizados;
+	A003 - Levantamento dos materiais que serão utilizados;
+	A004 - Orçamento dos materiais que serão utilizados;
+	A005 - Aquisição dos materiais que serão utilizados;
 	A005 - Construção da obra.
 
 - Quais são os processos de negócio?
 	   Atualmente o construtor e seu ajudante realizam a inspeção visual da planta da construção, e iniciam a construção com base na experiência pessoal. Cada material é adquirido conforme demanda pontual, também solicitada de acordo com prognóstico do construtor.  
-	   
+
 - Quais são as regras de negócios?
 	RN0001 - As regras brasileiras pertinentes à construção civil devem ser respeitadas. 
 	RN0002 - A infraestrutura elétrica deve ser arquitetada de acordo com a Norma Brasileira de Instalações elétricas de baixa tensão (ABNT NBR 5410).  
@@ -38,13 +38,43 @@ NEGÓCIO: Sistema da parte elétrica.
 	RN0004 - Um alvará para construção civil deverá ser requisitado na prefeitura local.
 	RN0005 - O orçamento da aquisição dos materiais deve considerar o preço médio, caso haja mais de uma marca para cada item.
 	RN0005 - Após o início das obras, não será possível alterar a planta, a menos que se pague uma multa de 150% do preço acordado. 
+	RN0006 - Cálculo para a área do eletroduto:
+          A = PI * (D/2) ^ 2
+          		Sendo:
+         		 A = Área da secção do eletroduto (em milímetros quadrados)
+          		 D = Diâmetro do eletroduto/2 (em milímetros)
+         		 PI = Constante matemática Pi (3,1415...)
+	RN0007 - Cálculo para o perímetro do eletroduto:
+          P = 2*PI*(D/2)
+          		Sendo:
+         		 P = Perímetro do eletroduto (em milímetros)
+          		 D = Diâmetro do eletroduto/2 (em milímetros)
+         		 PI = Constante matemática Pi (3,1415...)
+	RN0008 - Cálculo para a área da eletrocalha:
+         	         A = B * H          
+          	                Sendo:
+        		  A = Área da eletrocalha (em milímetros quadrados)
+  B = Base da eletrocalha (em milímetros)
+       		  H = Altura da eletrocalha (em milímetros)
+	RN0009 - Cálculo para o perímetro da eletrocalha:
+         	         P = 2 (B * H)          
+          	                Sendo:
+        		  P = Perímetro da eletrocalha (em milímetros)
+  B = Base da eletrocalha (em milímetros)
+       		  H = Altura da eletrocalha (em milímetros)
 
+
+
+ 
 REQUISITOS:
 =============================================================================
--R0001 - O sistema deve implementar o cálculo do perímetro das eletrocalhas e dos eletrodutos para posterior cálculo da acomodação dos mesmos na construção. Esse cálculo deve receber os seguintes parâmetros: diâmetro_em_mm (double), base_em_mm (double), altura_em_mm (double). Esta função deve retornar o valor do perímetro com duas casas decimais (double).
--R0002 - O sistema deve conter o cálculo da área das eletrocalhas e dos eletrodutos que serão instalados para serem compatíveis com o RN00002 respeitando a taxa de ocupação desses componentes em relação às bitolas dos cabos. Esse cálculo deve receber os seguintes parâmetros: diâmetro_em_mm (double), base_em_mm (double), altura_em_mm (double). Esta função deve retornar o valor da área com duas casas decimais (double).
+-R0001 - O sistema deve implementar os cálculos dos perímetros das eletrocalhas e dos eletrodutos para posterior cálculo da acomodação dos mesmos na construção. Esse cálculo deve receber os seguintes parâmetros: diametro (double), base (double), altura (double). Esta função deve retornar o valor do perímetro com duas casas decimais (double) RN0007 e RN0009.
+-R0002 - O sistema deve conter os cálculos das áreas das eletrocalhas e dos eletrodutos que serão instalados para serem compatíveis com o RN00002 respeitando a taxa de ocupação desses componentes em relação às bitolas dos cabos. Esse cálculo deve receber os seguintes parâmetros: diametro (double), base (double), altura (double). Esta função deve retornar o valor da área com duas casas decimais (double) RN0006 e RN0008.
 -R0003 - O sistema deve permitir a impressão de um relatório, e posterior integração de sistemas.
 -R0004 - O sistema deverá ser implementado em uma versão orientada a objeto.
 -R0005 - O sistema deve ser fácil de usar.
 -R0006 - O sistema deve utilizar as cores padrões da empresa e possuir seu logotipo.
 -R0007 - O sistema deve permitir somente o acesso interno com envio de detalhamento de pedidos para orçamento, por E-mail automático, para lojas de materiais de construção. 
+
+
+RELEASE 1: -R0001, -R0002.
