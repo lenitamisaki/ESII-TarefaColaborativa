@@ -2,10 +2,12 @@ NEGÓCIO: Sistema da parte elétrica.
 ===================================================================================
 
 - Qual é o negócio?
-	
+	O negócio terá como objetivo criar um sistema para facilitar a execução de cálculos de uma pequena empresa de construção civil em expansão, que começou a atuar também na áreas elétrica e hidraulica. A princípio apenas os cálculos da parte elétrica foram solicitados, como não existem sistemas disponíveis atualmente, e oa cálculos pelas grande empresas é realizado apenas no excelpara essa pequena parte da empresa, com custo-benefício equivalente ao que a empresa dispõem-se a pagar, solicitaram a elaboração de um projeto compatível com seus requisitos. 
 
 - Quais são problemas/oportunidades?
-]
+	A princípio como o próprio construtor realizava a inspeção visual e sugeria a compra de materiais perceberam que havia muita compra de materiais desnecessários ou a recompra de materias por erro de cálculo do construtor. Como a empresa lucra também com a compra desses materiais e percebeu-se que grande porcentagem desse lucro tem se perdido. 
+	Esta empresa precisa realizar, além de outras atribuições, alguns cálculos para dimensionamento de bitolas de cabos para instalação elétrica em eletrocalhas ou em eletrodutos. Como a empresa é essencialmente de construção civil, e os construtores atualmente não realizam nenhum cálculo, solicitou-se que o sistema realize esses cálculos para aquisição de material.
+	Mais para frente do processo os donos da empresa intencionam fazer parcerias com lojas de construção locais para aquisição de materiais para as obras.
 	
 - Quais são os vocabulários de negócio?
 
