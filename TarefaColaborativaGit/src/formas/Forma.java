@@ -3,15 +3,15 @@ package formas;
 public class Forma{
 	
 	double base, altura;
-	double raio;
+	double diametro;
 	
 	Forma(double base, double altura){
 		this.base = base;
 		this.altura = altura;
 	}
 	
-	Forma(double raio){
-		this.raio = raio;
+	Forma(double diametro){
+		this.diametro = diametro;
 	}
 	
 	double calcularPerimetro() {
@@ -24,4 +24,5 @@ public class Forma{
 	return area;
 	}
 	
+}
 }
