@@ -1,0 +1,14 @@
+NEGÓCIO: Sistema da parte elétrica.
+===================================================================================
+
+- Qual é o negócio?
+	
+
+- Quais são problemas/oportunidades?
+]
+	
+- Quais são os vocabulários de negócio?
+
+	 
+- Quem são os stakeholders?
+  	
