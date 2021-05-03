@@ -21,3 +21,13 @@ NEGÓCIO: Sistema da parte elétrica.
   	-Lojas de construções locais;
  	-Analista desenvolvedor.
   	
+- Atividades de Negócio 
+	A001 - Análise da planta da construção disponibilizada que será realizada;
+	A002 - Planejamento da infraestrutura que será realizada;
+	A003 -  “relacionar todos os elementos” que serão utilizados;
+	A004 - Orçar e adquirir os materiais que serão utilizados;
+	A005 - Construção da obra.
+
+- Quais são os processos de negócio?
+	   Atualmente o construtor e seu ajudante realizam a inspeção visual da planta da construção, e iniciam a construção com base na experiência pessoal. Cada material é adquirido conforme demanda pontual, também solicitada de acordo com prognóstico do construtor.  
+
