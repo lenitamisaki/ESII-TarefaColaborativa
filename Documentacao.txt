@@ -32,15 +32,19 @@ NEGÓCIO: Sistema da parte elétrica.
 	   Atualmente o construtor e seu ajudante realizam a inspeção visual da planta da construção, e iniciam a construção com base na experiência pessoal. Cada material é adquirido conforme demanda pontual, também solicitada de acordo com prognóstico do construtor.  
 	   
 - Quais são as regras de negócios?
-	RN0001 - A infraestrutura das eletrocalhas e eletrodutos deve ser planejada de acordo com a Norma Brasileira de Instalações elétricas de baixa tensão (NBR5410). 
-	
+	RN0001 - As regras brasileiras pertinentes à construção civil devem ser respeitadas. 
+	RN0002 - A infraestrutura elétrica deve ser arquitetada de acordo com a Norma Brasileira de Instalações elétricas de baixa tensão (ABNT NBR 5410).  
+	RN0003 - Todas as normas da legislação trabalhista brasileira devem ser respeitadas.
+	RN0004 - Um alvará para construção civil deverá ser requisitado na prefeitura local.
+	RN0005 - O orçamento da aquisição dos materiais deve considerar o preço médio, caso haja mais de uma marca para cada item.
+	RN0005 - Após o início das obras, não será possível alterar a planta, a menos que se pague uma multa de 150% do preço acordado. 
+
 REQUISITOS:
 =============================================================================
--R0001 - O sistema deve implementar os cálculos, que recebam os seguintes parâmetros: diâmetro_em_mm (double), base_em_mm (double), altura_em_mm (double). Esta função deve retornar o valor da área e do perímetro com duas casas decimais (double).
--R0002 - O sistema deve calcular com base na porcentagem de ocupação permitida da eletrocalha ou eletroduto, a quantidade desses componentes necessários para realização da obra total.
+-R0001 - O sistema deve implementar o cálculo do perímetro das eletrocalhas e dos eletrodutos para posterior cálculo da acomodação dos mesmos na construção. Esse cálculo deve receber os seguintes parâmetros: diâmetro_em_mm (double), base_em_mm (double), altura_em_mm (double). Esta função deve retornar o valor do perímetro com duas casas decimais (double).
+-R0002 - O sistema deve conter o cálculo da área das eletrocalhas e dos eletrodutos que serão instalados para serem compatíveis com o RN00002 respeitando a taxa de ocupação desses componentes em relação às bitolas dos cabos. Esse cálculo deve receber os seguintes parâmetros: diâmetro_em_mm (double), base_em_mm (double), altura_em_mm (double). Esta função deve retornar o valor da área com duas casas decimais (double).
 -R0003 - O sistema deve permitir a impressão de um relatório, e posterior integração de sistemas.
 -R0004 - O sistema deverá ser implementado em uma versão orientada a objeto.
 -R0005 - O sistema deve ser fácil de usar.
 -R0006 - O sistema deve utilizar as cores padrões da empresa e possuir seu logotipo.
--R0007 - O sistema deve permitir somente o acesso interno.
-
+-R0007 - O sistema deve permitir somente o acesso interno com envio de detalhamento de pedidos para orçamento, por E-mail automático, para lojas de materiais de construção. 
