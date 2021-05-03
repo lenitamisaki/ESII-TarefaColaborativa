@@ -1,7 +1,7 @@
 package formas;
 
 	public class Retangulo extends Forma {
-		
+
 		Retangulo(double base, double altura){
 			super(base, altura);
 		}
@@ -15,5 +15,5 @@ package formas;
 			double area = base*altura;
 		return area;
 		}
-		
+
 }
